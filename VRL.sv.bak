@@ -1,0 +1,36 @@
+module VRL#//Имя головного файла
+(
+
+parameter Br=5,
+parameter R=7,
+parameter N=8,
+parameter f0=50,
+parameter SIZE=N*Br*f,
+parameter f=f0/Br,
+parameter SIZE1=SIZE/2,
+parameter  R1=$clog2(SIZE1-N),
+parameter W=SIZE/32
+)//Объявление параметров
+(input  C,I,Q,Reset,
+output [2*R-1:0] S,
+output [R-1:0] IO,QO,SIN,COS,
+output [1:0] I_Q,
+output [2*R+R+R1-1:0] T1,T2,Us1,Us2,Us3,Us4,B1o,B2o,B3o,B4o,
+output [2*R+R+R1-1:0] T3,T4,
+output [2*R-1:0] I1,Q1,
+output [2*R+R-1:0] IP,IN,QP,QN,
+output [R-1:0] IP0,IN0,QP0,QN0,Si,Co
+);
+wire [R-1:0]si;
+wire [R-1:0]c;
+wire [R-1:0]i;
+wire q;
+wire [R-1:0]qo;
+wire [2*R-1:0] s;
+wire [2*R-1:0] s1;
+OQPSK_MOD #(.SIZE(SIZE),.R(R),.N(N),.f(f),.f0(f0),.Br(Br)) inst0(.C(C),.I(I),.Q(Q),.S(s),.SIN(SIN),.COS(COS),.IO(IO),.QO(QO),.Reset(Reset));//Модуль формирования модулирующего сигнала I
+SHIFT_S #(.W(W),.R(R)) inst2(.C(C),.S(s),.E(~Reset),.S_SH(s1));
+OQPSK_DMOD #(.SIZE(SIZE),.R(R),.N(N),.f(f),.f0(f0),.Br(Br),.SIZE1(SIZE1)) inst1(.C(C),.S(s[2*R-1:R]),.I_Q(I_Q),.E(~Reset),.T1(T1),.T2(T2),.Us1(Us1),.Us2(Us2),.Us3(Us3),.Us4(Us4),.B1o(B1o),.B2o(B2o),.B3o(B3o),.B4o(B4o),.T3(T3),.T4(T4),.I1(I1),.Q1(Q1),.IP(IP),.IN(IN),.QP(QP),.QN(QN),.IP0(IP0),.IN0(IN0),.QP0(QP0),.QN0(QN0),.Si(Si),.Co(Co));
+assign S=s;
+endmodule 
+

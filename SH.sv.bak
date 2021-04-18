@@ -1,0 +1,34 @@
+module SH
+#(parameter SIZE=,D=,Br=,T=SIZE/(2*Br*D))
+(
+	input C, E,
+	output logic [T-1] En
+);
+
+	// Declare the shift register
+	reg [T*D-1:0] sh;
+
+	// Shift everything over, load the incoming bit
+	always @ (posedge C)
+	begin
+		if (E == 1'b1)
+		begin
+			sh[T*D-1:1] <= sh[T*D-2:0];
+			sh[0] <= 1;
+			En [0] = sh[0];
+			En [0] = sh[T/4];
+			En [0] = sh[T/2];
+			En [0] = sh[3*T/4];
+		end
+		else
+		begin
+			sh = 0;
+			
+			En [0] = 0;
+		end
+	end
+
+	// Catch the outgoing bit
+	assign En  = er[L-1];
+
+endmodule

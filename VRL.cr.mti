@@ -1,0 +1,151 @@
+C:/intelFPGA/18.1/VRL/OQPSK_MOD/I_Q.v {1 {vlog -work work -stats=none {C:\intelFPGA\18.1\VRL\OQPSK_MOD\I_Q.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module I_Q
+
+Top level modules:
+	I_Q
+
+} {} {}} C:/intelFPGA/18.1/VRL/OQPSK_DMOD/FILTR1.sv {0 {vlog -work work -sv -stats=none C:/intelFPGA/18.1/VRL/OQPSK_DMOD/FILTR1.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module FILTR1
+** Error: C:/intelFPGA/18.1/VRL/OQPSK_DMOD/FILTR1.sv(13): (vlog-2110) Illegal reference to net "S_F".
+** Error: C:/intelFPGA/18.1/VRL/OQPSK_DMOD/FILTR1.sv(14): (vlog-2110) Illegal reference to net "S_F".
+
+} {4.0 6.0} {}} C:/intelFPGA/18.1/VRL/OQPSK_DMOD/PRM.v {1 {vlog -work work -stats=none C:/intelFPGA/18.1/VRL/OQPSK_DMOD/PRM.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module PRM
+
+Top level modules:
+	PRM
+
+} {} {}} C:/intelFPGA/18.1/VRL/VRL.sv {1 {vlog -work work -sv -stats=none C:/intelFPGA/18.1/VRL/VRL.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module VRL
+
+Top level modules:
+	VRL
+
+} {} {}} C:/intelFPGA/18.1/VRL/OQPSK_DMOD/OQPSK_DMOD.v {1 {vlog -work work -stats=none {C:\intelFPGA\18.1\VRL\OQPSK_DMOD\OQPSK_DMOD.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module OQPSK_DMOD
+
+Top level modules:
+	OQPSK_DMOD
+
+} {} {}} C:/intelFPGA/18.1/VRL/OQPSK_DMOD/CRL.v {1 {vlog -work work -stats=none C:/intelFPGA/18.1/VRL/OQPSK_DMOD/CRL.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module CRL
+
+Top level modules:
+	CRL
+
+} {} {}} C:/intelFPGA/18.1/VRL/OQPSK_MOD/PRD.v {1 {vlog -work work -stats=none C:/intelFPGA/18.1/VRL/OQPSK_MOD/PRD.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module PRD
+
+Top level modules:
+	PRD
+
+} {} {}} C:/intelFPGA/18.1/VRL/OQPSK_MOD/SHIFT_Q.v {1 {vlog -work work -stats=none C:/intelFPGA/18.1/VRL/OQPSK_MOD/SHIFT_Q.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module SHIFT_Q
+
+Top level modules:
+	SHIFT_Q
+
+} {} {}} C:/intelFPGA/18.1/VRL/OQPSK_DMOD/SHIFT_INT.sv {1 {vlog -work work -sv -stats=none C:/intelFPGA/18.1/VRL/OQPSK_DMOD/SHIFT_INT.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module SHIFT_INT
+
+Top level modules:
+	SHIFT_INT
+
+} {} {}} C:/intelFPGA/18.1/VRL/SHIFT_S.sv {0 {vlog -work work -sv -stats=none C:/intelFPGA/18.1/VRL/SHIFT_S.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module SHIFT_S
+** Error: C:/intelFPGA/18.1/VRL/SHIFT_S.sv(13): (vlog-2110) Illegal reference to net "S_SH".
+
+} {4.0 5.0} {}} C:/intelFPGA/18.1/VRL/OQPSK_MOD/DE1_SOC_golden_top.v {1 {vlog -work work -stats=none C:/intelFPGA/18.1/VRL/OQPSK_MOD/DE1_SOC_golden_top.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module DE1_SOC_golden_top
+
+Top level modules:
+	DE1_SOC_golden_top
+
+} {} {}} C:/intelFPGA/18.1/VRL/OQPSK_DMOD/MUX.sv {1 {vlog -work work -sv -stats=none C:/intelFPGA/18.1/VRL/OQPSK_DMOD/MUX.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module MUX
+
+Top level modules:
+	MUX
+
+} {} {}} C:/intelFPGA/18.1/VRL/OQPSK_DMOD/INT.sv {0 {vlog -work work -sv -stats=none C:/intelFPGA/18.1/VRL/OQPSK_DMOD/INT.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module INT
+** Error: C:/intelFPGA/18.1/VRL/OQPSK_DMOD/INT.sv(32): (vlog-2110) Illegal reference to net "str".
+** Error: C:/intelFPGA/18.1/VRL/OQPSK_DMOD/INT.sv(33): (vlog-2110) Illegal reference to net "st".
+
+} {4.0 6.0} {}} C:/intelFPGA/18.1/VRL/OQPSK_DMOD/DE1_SOC_golden_top.v {1 {vlog -work work -stats=none C:/intelFPGA/18.1/VRL/OQPSK_DMOD/DE1_SOC_golden_top.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module DE1_SOC_golden_top
+
+Top level modules:
+	DE1_SOC_golden_top
+
+} {} {}} C:/intelFPGA/18.1/VRL/OQPSK_DMOD/S_C.sv {1 {vlog -work work -sv -stats=none C:/intelFPGA/18.1/VRL/OQPSK_DMOD/S_C.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module S_C
+
+Top level modules:
+	S_C
+
+} {} {}} C:/intelFPGA/18.1/VRL/OQPSK_MOD/I_Q.sv {1 {vlog -work work -sv -stats=none C:/intelFPGA/18.1/VRL/OQPSK_MOD/I_Q.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module I_Q
+
+Top level modules:
+	I_Q
+
+} {} {}} C:/intelFPGA/18.1/VRL/OQPSK_DMOD/FILTR.v {1 {vlog -work work -stats=none C:/intelFPGA/18.1/VRL/OQPSK_DMOD/FILTR.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module FILTR
+
+Top level modules:
+	FILTR
+
+} {} {}} C:/intelFPGA/18.1/VRL/OQPSK_MOD/OQPSK_MOD.v {1 {vlog -work work -stats=none {C:\intelFPGA\18.1\VRL\OQPSK_MOD\OQPSK_MOD.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module OQPSK_MOD
+
+Top level modules:
+	OQPSK_MOD
+
+} {} {}} C:/intelFPGA/18.1/VRL/OQPSK_MOD/S_C.v {1 {vlog -work work -stats=none C:/intelFPGA/18.1/VRL/OQPSK_MOD/S_C.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module S_C
+
+Top level modules:
+	S_C
+
+} {} {}} C:/intelFPGA/18.1/VRL/OQPSK_DMOD/SUMM.v {1 {vlog -work work -stats=none C:/intelFPGA/18.1/VRL/OQPSK_DMOD/SUMM.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module SUMM
+
+Top level modules:
+	SUMM
+
+} {} {}} C:/intelFPGA/18.1/VRL/OQPSK_DMOD/PRM.sv {1 {vlog -work work -sv -stats=none C:/intelFPGA/18.1/VRL/OQPSK_DMOD/PRM.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module PRM
+
+Top level modules:
+	PRM
+
+} {} {}} C:/intelFPGA/18.1/VRL/OQPSK_DMOD/I_Q.sv {1 {vlog -work work -sv -stats=none C:/intelFPGA/18.1/VRL/OQPSK_DMOD/I_Q.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module I_Q
+
+Top level modules:
+	I_Q
+
+} {} {}}

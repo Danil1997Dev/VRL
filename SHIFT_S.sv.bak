@@ -1,0 +1,17 @@
+module SHIFT_S#(parameter W=8,R=4)(
+input E,C,
+input  signed [2*R-1:0] S,
+output [2*R-1:0] S_SH
+);
+integer i;
+	reg [2*R-1:0] L [W-1:0];
+	always @ (negedge C)
+	begin
+		if (E == 1'b1)
+		L[0]<=S;
+		L[N-1:1] <= L[N-2:0];
+			S_SH <= L[N-1];
+	end
+
+
+endmodule
